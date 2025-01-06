@@ -1011,7 +1011,7 @@ export default function Home() {
           <div className='flex gap-4'>
             <div>
               <Image
-                src={`/icons/${ability.icon}.png`}
+                src={`/icons/${ability.icon}.PNG`}
                 alt='abilityIcon'
                 className='rounded-xl'
                 width={100}
