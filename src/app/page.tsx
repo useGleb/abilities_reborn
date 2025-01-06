@@ -1004,7 +1004,7 @@ export default function Home() {
   return (
     <div className='flex flex-col items-center justify-center bg-[#212129]'>
       {abilities.map((ability, index) => (
-        <div key={index} className='p-4 w-full max-w-[50vw] text-[#c4c3c9]'>
+        <div key={index} className='p-4 w-[50vw] text-[#c4c3c9]'>
           <div className='text-xl font-bold mb-4'>
             {ability.abilityEngine.name}
           </div>
@@ -1018,7 +1018,7 @@ export default function Home() {
                 height={100}
               />
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-[500px]'>
               <div className='mb-4'>
                 {ability.abilityEngine.long_description_active ? (
                   <div className='max-w-[25vw]'>
