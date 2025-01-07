@@ -14,6 +14,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'no_academy',
     },
     values: [
       {
@@ -42,6 +43,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'honor',
     },
     values: [
       {
@@ -80,6 +82,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesPassive/AccurateStrike/Content/AccurateStrikeDescription.AccurateStrikeDescription_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'blood',
     },
     values: [
       {
@@ -118,6 +121,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'necromancy',
     },
     values: [
       {
@@ -146,6 +150,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'blood',
     },
     values: [
       {
@@ -174,6 +179,7 @@ const abilities = [
       long_description_active:
         'Сильное торнадо увеличивает скорость атаки персонажа и повышает его шанс уклонения',
       manaCostType: 'mana',
+      academy: 'no_academy',
     },
     values: [
       {
@@ -207,6 +213,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'frost',
     },
     values: [
       {
@@ -246,6 +253,7 @@ const abilities = [
       long_description_active:
         'Шар чистой энергии летит в выбранном направлении, нанося урон всем врагам на своем пути',
       manaCostType: 'mana',
+      academy: 'electrical',
     },
     values: [
       {
@@ -280,6 +288,7 @@ const abilities = [
       long_description_active:
         'Забирает 30% текущего здоровья и увеличивает скорость атаки.',
       manaCostType: 'mana',
+      academy: 'blood',
     },
     values: [
       {
@@ -322,6 +331,7 @@ const abilities = [
       long_description_active:
         'Благословение высших сил снимает все негативные эффекты с цели и распыляет их взрывной силой, нанося урон врагам вокруг. Также может быть применено на врагов.',
       manaCostType: 'mana',
+      academy: 'honor',
     },
     values: [
       {
@@ -355,6 +365,7 @@ const abilities = [
       long_description_active:
         'Из земли поднимаются огненные гейзеры, наносящие урон всем задетым врагам. Гейзеры появляются несколькими волнами в случайных местах в радиусе выбранной точки.',
       manaCostType: 'mana',
+      academy: 'fire',
     },
     values: [
       {
@@ -389,7 +400,7 @@ const abilities = [
         positiveDirection: 'positive',
       },
       {
-        values: [5, 10, 15],
+        values: [3, 7, 10],
         unit: 'second',
         prefix: 'Длит. появления гейзеров',
         postfix: 'сек',
@@ -399,7 +410,7 @@ const abilities = [
         positiveDirection: 'positive',
       },
       {
-        values: [5, 10, 15],
+        values: [3, 5, 7],
         unit: 'second',
         prefix: 'Длит. эффекта',
         postfix: 'сек',
@@ -409,7 +420,7 @@ const abilities = [
         positiveDirection: 'positive',
       },
       {
-        values: [22, 45, 65],
+        values: [15, 25, 45],
         unit: 'damage',
         prefix: 'Урон от горения',
         postfix: 'ед/сек',
@@ -422,8 +433,8 @@ const abilities = [
     ],
     icon: 'firestorm',
     castRange: [551, 852, 1001],
-    manaCost: [25, 25, 25],
-    cooldown: [5, 10, 15],
+    manaCost: [25, 125, 225],
+    cooldown: [5, 15, 20],
     castingDelay: 1,
   },
   {
@@ -439,6 +450,7 @@ const abilities = [
       long_description_active:
         'Библейский ливень обрушивается на врагов, нанося урон и замедляя их каждую секунду.',
       manaCostType: 'mana',
+      academy: 'water',
     },
     values: [
       {
@@ -472,10 +484,11 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'fire',
     },
     values: [
       {
-        values: [50, 20, 40],
+        values: [15, 25, 50],
         unit: 'damage',
         prefix: 'Повышение урона',
         postfix: 'ед.',
@@ -501,6 +514,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'honor',
     },
     values: [
       {
@@ -539,6 +553,7 @@ const abilities = [
       long_description_active:
         'Персонаж размещает наземную мину. При обнаружении врага - мина взрывается с задержкой в 1 секунду.',
       manaCostType: 'mana',
+      academy: 'tech',
     },
     values: [
       {
@@ -581,6 +596,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericActiveAbility.GenericActiveAbility_C'",
       long_description_active: 'Герой устанавливает самодельную турель',
       manaCostType: 'mana',
+      academy: 'tech',
     },
     values: [
       {
@@ -594,7 +610,7 @@ const abilities = [
         positiveDirection: 'positive',
       },
       {
-        values: [150, 250, 350],
+        values: [50, 100, 150],
         unit: 'damage',
         prefix: 'Урон турели',
         postfix: 'ед',
@@ -635,6 +651,7 @@ const abilities = [
       long_description_active:
         'Внутренняя сила мага даёт повышенный урон магическим заклинаниям',
       manaCostType: 'mana',
+      academy: 'no_academy',
     },
     values: [
       {
@@ -663,6 +680,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'no_academy',
     },
     values: [
       {
@@ -691,6 +709,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'necromancy',
     },
     values: [
       {
@@ -730,6 +749,7 @@ const abilities = [
       long_description_active:
         'Сифон жизни высасывает жизнь из всех врагов рядом и переносит её союзникам. \r\n\r\nИспользует здоровье, вместо маны. Наносит урон как при включении, так и выключении',
       manaCostType: 'health',
+      academy: 'necromancy',
     },
     values: [
       {
@@ -773,6 +793,45 @@ const abilities = [
   },
   {
     abilityEngine: {
+      name: 'Рикошет',
+      class:
+        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesPassive/Ricochet/A_Ricochet.A_Ricochet_C'",
+      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/ricochet.ricochet'",
+      long_description:
+        'Любая атака персонажа на врага так же отскакивает на соседних персонажей',
+      section: 'common',
+      descriptionClass:
+        "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
+      long_description_active: '',
+      manaCostType: 'mana',
+      academy: 'no_academy',
+    },
+    values: [
+      {
+        values: [1, 2, 3],
+        unit: 'generic',
+        prefix: 'Рикошетов',
+        postfix: 'раз',
+        damageType: 'None',
+        isActiveRelated: false,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+      {
+        values: [300, 550, 895],
+        unit: 'range',
+        prefix: 'Радиус от врага',
+        postfix: 'м',
+        damageType: 'None',
+        isActiveRelated: false,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+    ],
+    icon: 'ricochet',
+  },
+  {
+    abilityEngine: {
       name: 'Лечащая Рука',
       class:
         "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesActive/HealingHand/AA_HealingHand.AA_HealingHand_C'",
@@ -783,6 +842,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericActiveAbility.GenericActiveAbility_C'",
       long_description_active: 'Лечит существо через молитву',
       manaCostType: 'mana',
+      academy: 'honor',
     },
     values: [
       {
@@ -815,6 +875,7 @@ const abilities = [
       long_description_active:
         'Кровавый прыжок не только мгновенно перемещает персонажа на выбранную точку, но и наносит урон всем врагам на пути',
       manaCostType: 'health',
+      academy: 'blood',
     },
     values: [
       {
@@ -848,41 +909,37 @@ const abilities = [
   },
   {
     abilityEngine: {
-      name: 'Рикошет',
+      name: 'Ловушка Некроманта',
       class:
-        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesPassive/Ricochet/A_Ricochet.A_Ricochet_C'",
-      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/ricochet.ricochet'",
-      long_description:
-        'Любая атака персонажа на врага так же отскакивает на соседних персонажей',
+        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesActive/NecromanticTrap/AA_NecromanticTrap.AA_NecromanticTrap_C'",
+      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/necromanticTrap.necromanticTrap'",
+      long_description: '',
       section: 'common',
       descriptionClass:
-        "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
-      long_description_active: '',
+        "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericActiveAbility.GenericActiveAbility_C'",
+      long_description_active:
+        'Ловушка некроманта ловит вражеское существо. Первый враг, который в нее вступит не только начнет сражаться на стороне некроманта, но и будет терять здоровье каждую секунду и передавать его некроманту. Не работает на боссов',
       manaCostType: 'mana',
+      academy: 'necromancy',
     },
     values: [
       {
-        values: [1, 2, 3],
-        unit: 'generic',
-        prefix: 'Рикошетов',
-        postfix: 'раз',
-        damageType: 'None',
-        isActiveRelated: false,
-        isSingleValue: false,
-        positiveDirection: 'positive',
-      },
-      {
-        values: [300, 550, 895],
-        unit: 'range',
-        prefix: 'Радиус от врага',
-        postfix: 'м',
-        damageType: 'None',
-        isActiveRelated: false,
+        values: [15, 25, 42],
+        unit: 'damage',
+        prefix: 'Урона в секунду',
+        postfix: 'ед',
+        damageType:
+          "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Damage/MagicalDamage.MagicalDamage_C'",
+        isActiveRelated: true,
         isSingleValue: false,
         positiveDirection: 'positive',
       },
     ],
-    icon: 'ricochet',
+    icon: 'necromanticTrap',
+    castRange: [551, 852, 1001],
+    manaCost: [200, 280, 325],
+    cooldown: [44, 32, 24],
+    castingDelay: 0,
   },
   {
     abilityEngine: {
@@ -897,6 +954,7 @@ const abilities = [
       long_description_active:
         'Мистический купол, появляется на выбранной точки защищая союзников от магии',
       manaCostType: 'mana',
+      academy: 'honor',
     },
     values: [
       {
@@ -939,6 +997,7 @@ const abilities = [
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
       long_description_active: '',
       manaCostType: 'mana',
+      academy: 'no_academy',
     },
     values: [
       {
@@ -956,35 +1015,93 @@ const abilities = [
   },
   {
     abilityEngine: {
-      name: 'Ловушка Некроманта',
+      name: 'Рука Природы',
       class:
-        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesActive/NecromanticTrap/AA_NecromanticTrap.AA_NecromanticTrap_C'",
-      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/necromanticTrap.necromanticTrap'",
+        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesPassive/NaturesHand/A_NaturesHand.A_NaturesHand_C'",
+      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/naturesHand.naturesHand'",
+      long_description: 'Связь с природой увеличивает все входящее лечение',
+      section: 'common',
+      descriptionClass:
+        "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericPassiveAbility.GenericPassiveAbility_C'",
+      long_description_active: '',
+      manaCostType: 'mana',
+      academy: 'nature',
+    },
+    values: [
+      {
+        values: [0.05, 0.1, 0.33],
+        unit: 'precentage',
+        prefix: 'Увел. входящего лечения',
+        postfix: '%',
+        damageType: 'None',
+        isActiveRelated: false,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+    ],
+    icon: 'naturesHand',
+  },
+  {
+    abilityEngine: {
+      name: 'Щит Энергии',
+      class:
+        "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Abilities/AbilitiesActive/EnergyShield/EnergyShield.EnergyShield_C'",
+      icon: "/Script/Engine.Texture2D'/Game/Character/Abilities/Icons/energyShield.energyShield'",
       long_description: '',
       section: 'common',
       descriptionClass:
         "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Character/Abilities/Content/Description/Generics/GenericActiveAbility.GenericActiveAbility_C'",
       long_description_active:
-        'Ловушка некроманта ловит вражеское существо. Первый враг, который в нее вступит не только начнет сражаться на стороне некроманта, но и будет терять здоровье каждую секунду и передавать его некроманту. Не работает на боссов',
+        'Щит энергии защищает союзника, возвращая урон врагам',
       manaCostType: 'mana',
+      academy: 'electrical',
     },
     values: [
       {
-        values: [15, 25, 42],
-        unit: 'damage',
-        prefix: 'Урона в секунду',
-        postfix: 'ед',
-        damageType:
-          "/Script/Engine.BlueprintGeneratedClass'/Game/Character/Damage/MagicalDamage.MagicalDamage_C'",
+        values: [5, 8, 15],
+        unit: 'second',
+        prefix: 'Длительность',
+        postfix: 'сек',
+        damageType: 'None',
+        isActiveRelated: true,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+      {
+        values: [0.28, 0.35, 0.43],
+        unit: 'precentage',
+        prefix: 'Понижение урона',
+        postfix: '%',
+        damageType: 'None',
+        isActiveRelated: true,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+      {
+        values: [0.1, 0.13, 0.23],
+        unit: 'precentage',
+        prefix: 'Отражение урона',
+        postfix: '%',
+        damageType: 'None',
+        isActiveRelated: true,
+        isSingleValue: false,
+        positiveDirection: 'positive',
+      },
+      {
+        values: [250, 325, 442],
+        unit: 'range',
+        prefix: 'Радиус отражения',
+        postfix: 'м',
+        damageType: 'None',
         isActiveRelated: true,
         isSingleValue: false,
         positiveDirection: 'positive',
       },
     ],
-    icon: 'necromanticTrap',
+    icon: 'energyShield',
     castRange: [551, 852, 1001],
-    manaCost: [200, 280, 325],
-    cooldown: [44, 32, 24],
+    manaCost: [120, 160, 220],
+    cooldown: [14, 18, 22],
     castingDelay: 0,
   },
 ];
@@ -1011,7 +1128,7 @@ export default function Home() {
           <div className='flex gap-4'>
             <div>
               <Image
-                src={`/icons/${ability.icon}.PNG`}
+                src={`/icons/${ability.icon}.png`}
                 alt='abilityIcon'
                 className='rounded-xl'
                 width={100}
